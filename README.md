@@ -1,4 +1,4 @@
-# Awesome Support Communication Templates
+# Support Email Templates
 
 [![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-support-yellow?style=for-the-badge&logo=buy-me-a-coffee)](https://buymeacoffee.com/bowang168)
 [![Sponsor](https://img.shields.io/badge/GitHub%20Sponsors-sponsor-ea4aaa?style=for-the-badge&logo=github-sponsors)](https://github.com/sponsors/bowang168)
@@ -6,6 +6,18 @@
 **33 production-ready email templates for technical support engineers.**
 
 Covering the full lifecycle of a support case — from first contact to closure, escalation to bug tracking. Built from real-world experience supporting large-scale enterprise Linux environments across global time zones.
+
+---
+
+## Read Online
+
+- [English Edition](https://bowang168.github.io/support-email-templates/) — Full templates on GitHub Pages
+- [中文版](https://bowang168.github.io/support-email-templates/zh/) — 完整中文版在线阅读
+
+## Download PDF
+
+- [English PDF](https://github.com/bowang168/support-email-templates/raw/main/pdf/Support-Email-Templates-EN.pdf)
+- [中文 PDF](https://github.com/bowang168/support-email-templates/raw/main/pdf/Support-Email-Templates-ZH.pdf)
 
 ---
 
@@ -37,13 +49,9 @@ These templates are:
 
 ## Quick Start
 
-1. Open [`templates.md`](templates.md)
+1. Open [`templates.md`](templates.md) or [read online](https://bowang168.github.io/support-email-templates/)
 2. Find your situation in the [Quick Reference](#quick-reference) table
 3. Copy the template, replace `[placeholders]`, send
-
-## Browse Templates
-
-**[View all templates →](templates.md)**
 
 ## Quick Reference
 

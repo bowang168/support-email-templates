@@ -1,0 +1,104 @@
+\documentclass[11pt,a4paper,openany]{report}
+
+\usepackage[margin=2.5cm, top=3cm, bottom=3cm]{geometry}
+\usepackage{fontspec}
+\setmainfont{PingFang SC}
+\setmonofont[Scale=0.85]{Menlo}
+
+\usepackage{xeCJK}
+\setCJKmainfont{PingFang SC}
+
+\usepackage{xcolor}
+\definecolor{chaptercolor}{HTML}{1A73E8}
+\definecolor{linkcolor}{HTML}{1A73E8}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=linkcolor,
+    urlcolor=linkcolor,
+    citecolor=linkcolor,
+    pdfauthor={Bo Wang},
+    pdftitle={Support Email Templates}
+}
+
+\usepackage{graphicx}
+\usepackage{eso-pic}
+\usepackage{framed}
+\usepackage{calc}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{array}
+
+% Fix pandoc longtable
+\newcounter{none}
+\renewcommand{\thenone}{}
+\makeatletter
+\@namedef{ftype@none}{8}
+\makeatother
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textit{Support Email Templates}}
+\fancyhead[R]{\small\textit{Bo Wang}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+    {\normalfont\huge\bfseries\color{chaptercolor}}
+    {\chaptertitlename\ \thechapter}{20pt}{\Huge}
+\titlespacing*{\chapter}{0pt}{-20pt}{30pt}
+
+\titleformat{\section}
+    {\normalfont\Large\bfseries\color{chaptercolor}}
+    {\thesection}{1em}{}
+
+\titleformat{\subsection}
+    {\normalfont\large\bfseries}
+    {\thesubsection}{1em}{}
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+$if(highlighting-macros)$
+$highlighting-macros$
+$endif$
+
+\begin{document}
+
+% Title page
+\thispagestyle{empty}
+\begin{center}
+\vspace*{4cm}
+{\Huge\bfseries\color{chaptercolor} Support Email Templates}
+
+\vspace{1cm}
+{\Large 技术支持邮件沟通模板}
+
+\vspace{0.5cm}
+{\large 33 套生产级邮件模板}
+
+\vspace{3cm}
+{\Large Bo Wang (王波)}
+
+\vspace{0.3cm}
+{\normalsize Oracle 新西兰 首席技术支持工程师}
+
+{\small github.com/bowang168 | linkedin.com/in/bowang168}
+
+\vspace{2cm}
+{\large v1.0 | 2026 Edition}
+\end{center}
+\cleardoublepage
+
+% TOC
+\thispagestyle{empty}
+\tableofcontents
+\cleardoublepage
+
+% Content
+$body$
+
+\end{document}
