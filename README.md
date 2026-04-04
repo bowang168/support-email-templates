@@ -64,7 +64,7 @@ These templates are:
 | Customer hasn't responded to info request | B2 |
 | Want to do a live session | B3 |
 | Need sosreport *(Linux)* | B4 |
-| Need REDACTED_TOOL logs *(Linux)* | B5 |
+| Need performance monitoring logs *(Linux)* | B5 |
 | Performance issue — need structured data | B6 |
 | Crash/reboot — need structured data | B7 |
 | Handing off to specialist | C1 |
@@ -104,7 +104,7 @@ If these templates saved you time, consider buying me a coffee or sponsoring on 
 
 **Bo Wang** — Principal Technical Support Engineer, based in Auckland, New Zealand.
 
-An English major who taught himself into IT — earned RHCE, CCNP, PMP, and OCI certifications, and built a career spanning IBM, HSBC, and Oracle across China and New Zealand. Currently focused on enterprise Linux support, cloud infrastructure, and building tools that make ops work less painful.
+An English major who taught himself into IT — earned RHCE, CCNP, PMP, and OCI certifications, and built a career spanning major technology and financial enterprises across China and New Zealand. Currently focused on enterprise Linux support, cloud infrastructure, and building tools that make ops work less painful.
 
 - [GitHub](https://github.com/bowang168)
 - [LinkedIn](https://linkedin.com/in/bowang168)

@@ -20,7 +20,7 @@ title: 技术支持邮件沟通模板
 
 **Bo Wang (王波)** — Oracle 新西兰首席技术支持工程师，常驻奥克兰。
 
-英语专业出身，自学转型 IT — 先后获得 RHCE、CCNP、PMP、OCI 认证，职业生涯横跨 IBM、HSBC、Oracle 中国和 Oracle 新西兰。目前专注于企业级 Linux 支持、云基础设施以及运维自动化工具开发。
+英语专业出身，自学转型 IT — 先后获得 RHCE、CCNP、PMP、OCI 认证，职业生涯横跨多家大型科技与金融企业。目前专注于企业级 Linux 支持、云基础设施以及运维自动化工具开发。
 
 - GitHub: [bowang168](https://github.com/bowang168)
 - LinkedIn: [bowang168](https://linkedin.com/in/bowang168)
@@ -70,7 +70,7 @@ title: 技术支持邮件沟通模板
 | `[Timeframe]` | 具体的时间承诺（如 "4 个工作小时"） |
 | `[ETA]` | 下次更新的预计时间 |
 | `[Date]` | 日历日期 |
-| `[Doc ID]` | 文档参考编号 |
+| `[Vendor Doc ID]` | 厂商文档参考编号 |
 | `[Customer Name]` | 客户姓名（已知时使用） |
 | `[Your Name]` | 你的姓名 |
 
@@ -99,7 +99,7 @@ Best regards,
 | # | 类别 | 模板 |
 |---|------|------|
 | A | **工单生命周期** | 新工单已接收 · 进度更新 · 诊断数据已接收 |
-| B | **信息请求** | 请求信息 · 跟进 · 远程会话 · sosreport · REDACTED_TOOL · 性能问题 · 宕机/重启 |
+| B | **信息请求** | 请求信息 · 跟进 · 远程会话 · sosreport · 性能监控 · 性能问题 · 宕机/重启 |
 | C | **升级处理** | 升级通知 |
 | D | **预关闭** | 确认解决 · 无响应警告 · 根因数据不足 · 持续监控 |
 | E | **关闭工单** | 已解决 · 已解决 + 参考文档 · 关闭（无活动） · 关闭（无响应） |
@@ -268,7 +268,7 @@ To generate:
 If sos is not installed:
   sudo yum install sos
 
-Reference: Doc ID REDACTED_DOC
+Reference: [Vendor Doc ID]
 
 Best regards,
 [Your Name]
@@ -277,26 +277,22 @@ Best regards,
 
 ---
 
-### B5. 请求 REDACTED_TOOL/REDACTED_TOOL 日志
+### B5. 请求性能监控日志
 
 > **适用场景：** 服务器挂起或性能问题，需要操作系统级别的指标数据。*（Linux 专用）*
 
 ```
-Subject: Action Required — REDACTED_TOOL Logs Needed for [SR Number]
+Subject: Action Required — Performance Monitoring Logs Needed for [SR Number]
 
 Hi,
 
 To assist with the server hang issue in [SR Number], please collect
-and upload REDACTED_TOOL or REDACTED_TOOL logs.
-
-To find the log directory:
-  ps aux | grep -i -e REDACTED_TOOL -e REDACTED_TOOL
+and upload system performance monitoring logs.
 
 To compress and upload:
-  tar -cjvf REDACTED_TOOL.tar.bzip2 [log_folder_path]
+  tar -cjvf perf_logs.tar.bzip2 [log_folder_path]
 
-Reference: Doc ID REDACTED_DOC
-If not installed: sudo yum install REDACTED_TOOL
+Reference: [Vendor Doc ID]
 
 Best regards,
 [Your Name]
@@ -325,8 +321,8 @@ Issue details:
 - Server role (e.g., Database, VM Host, Application Server)
 
 Diagnostic data:
-- sosreport (Doc ID REDACTED_DOC)
-- REDACTED_TOOL logs covering the issue timeframe (Doc ID REDACTED_DOC)
+- sosreport ([Vendor Doc ID])
+- System performance monitoring logs covering the issue timeframe ([Vendor Doc ID])
 - Error messages, console output, or screenshots
 
 Best regards,
@@ -356,8 +352,8 @@ Issue details:
 - Whether this has happened before, and frequency
 
 Diagnostic data:
-- sosreport (Doc ID REDACTED_DOC)
-- REDACTED_TOOL logs covering the timeframe (Doc ID REDACTED_DOC)
+- sosreport ([Vendor Doc ID])
+- System performance monitoring logs covering the timeframe ([Vendor Doc ID])
 - Console logs or screenshots, if available
 - vmcore file, if generated
 
@@ -525,7 +521,7 @@ Hi,
 Your issue regarding [Issue Summary] has been resolved.
 
 For future reference, if you encounter this again, you may be able
-to resolve it using [Doc ID / Link].
+to resolve it using [Vendor Doc ID / Link].
 
 This case will now be closed.
 
@@ -889,7 +885,7 @@ Best regards,
 | 客户未回复信息请求 | B2 |
 | 希望进行远程会话 | B3 |
 | 需要 sosreport *（Linux）* | B4 |
-| 需要 REDACTED_TOOL 日志 *（Linux）* | B5 |
+| 需要性能监控日志 *（Linux）* | B5 |
 | 性能问题 — 需要结构化数据 | B6 |
 | 宕机/重启 — 需要结构化数据 | B7 |
 | 转交给专家 | C1 |

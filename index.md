@@ -17,7 +17,7 @@ Built from years of hands-on experience supporting large-scale enterprise Linux 
 
 **Bo Wang** — Principal Technical Support Engineer at Oracle New Zealand, based in Auckland.
 
-An English major who taught himself into IT — earned RHCE, CCNP, PMP, and OCI certifications along the way, and built a career spanning IBM, HSBC, Oracle China, and Oracle NZ. Currently focused on enterprise Linux support, cloud infrastructure, and building automation tools for operational efficiency.
+An English major who taught himself into IT — earned RHCE, CCNP, PMP, and OCI certifications along the way, and built a career spanning major technology and financial enterprises. Currently focused on enterprise Linux support, cloud infrastructure, and building automation tools for operational efficiency.
 
 - GitHub: [bowang168](https://github.com/bowang168)
 - LinkedIn: [bowang168](https://linkedin.com/in/bowang168)
@@ -67,7 +67,7 @@ The templates below are grounded in enterprise Linux support, but the structure,
 | `[Timeframe]` | Specific commitment (e.g., "4 business hours") |
 | `[ETA]` | Expected date/time for next update |
 | `[Date]` | Calendar date |
-| `[Doc ID]` | Documentation reference ID |
+| `[Vendor Doc ID]` | Vendor documentation reference ID |
 | `[Customer Name]` | Customer's name (use when known) |
 | `[Your Name]` | Your name |
 
@@ -96,7 +96,7 @@ Best regards,
 | # | Category | Templates |
 |---|----------|-----------|
 | A | **Case Lifecycle** | New Case Received · Progress Update · Diagnostic Data Received |
-| B | **Information Request** | Request Information · Follow-Up · Live Session · sosreport · REDACTED_TOOL · Performance Issue · Crash/Reboot |
+| B | **Information Request** | Request Information · Follow-Up · Live Session · sosreport · Performance Monitor · Performance Issue · Crash/Reboot |
 | C | **Escalation** | Escalation Notification |
 | D | **Preclose** | Confirm Resolution · Inactivity Warning · Insufficient Root Cause · Active Monitoring |
 | E | **Closure** | Resolved · Resolved + Reference · Closed (Inactivity) · Closed (No Response) |
@@ -265,7 +265,7 @@ To generate:
 If sos is not installed:
   sudo yum install sos
 
-Reference: Doc ID REDACTED_DOC
+Reference: [Vendor Doc ID]
 
 Best regards,
 [Your Name]
@@ -274,26 +274,22 @@ Best regards,
 
 ---
 
-### B5. Request for REDACTED_TOOL/REDACTED_TOOL Logs
+### B5. Request for Performance Monitoring Logs
 
 > **When:** Server hang or performance issue requiring OS-level metrics. *(Linux-specific)*
 
 ```
-Subject: Action Required — REDACTED_TOOL Logs Needed for [SR Number]
+Subject: Action Required — Performance Monitoring Logs Needed for [SR Number]
 
 Hi,
 
 To assist with the server hang issue in [SR Number], please collect
-and upload REDACTED_TOOL or REDACTED_TOOL logs.
-
-To find the log directory:
-  ps aux | grep -i -e REDACTED_TOOL -e REDACTED_TOOL
+and upload system performance monitoring logs.
 
 To compress and upload:
-  tar -cjvf REDACTED_TOOL.tar.bzip2 [log_folder_path]
+  tar -cjvf perf_logs.tar.bzip2 [log_folder_path]
 
-Reference: Doc ID REDACTED_DOC
-If not installed: sudo yum install REDACTED_TOOL
+Reference: [Vendor Doc ID]
 
 Best regards,
 [Your Name]
@@ -322,8 +318,8 @@ Issue details:
 - Server role (e.g., Database, VM Host, Application Server)
 
 Diagnostic data:
-- sosreport (Doc ID REDACTED_DOC)
-- REDACTED_TOOL logs covering the issue timeframe (Doc ID REDACTED_DOC)
+- sosreport ([Vendor Doc ID])
+- System performance monitoring logs covering the issue timeframe ([Vendor Doc ID])
 - Error messages, console output, or screenshots
 
 Best regards,
@@ -353,8 +349,8 @@ Issue details:
 - Whether this has happened before, and frequency
 
 Diagnostic data:
-- sosreport (Doc ID REDACTED_DOC)
-- REDACTED_TOOL logs covering the timeframe (Doc ID REDACTED_DOC)
+- sosreport ([Vendor Doc ID])
+- System performance monitoring logs covering the timeframe ([Vendor Doc ID])
 - Console logs or screenshots, if available
 - vmcore file, if generated
 
@@ -522,7 +518,7 @@ Hi,
 Your issue regarding [Issue Summary] has been resolved.
 
 For future reference, if you encounter this again, you may be able
-to resolve it using [Doc ID / Link].
+to resolve it using [Vendor Doc ID / Link].
 
 This case will now be closed.
 
@@ -886,7 +882,7 @@ Best regards,
 | Customer hasn't responded to info request | B2 |
 | Want to do a live session | B3 |
 | Need sosreport *(Linux)* | B4 |
-| Need REDACTED_TOOL logs *(Linux)* | B5 |
+| Need performance monitoring logs *(Linux)* | B5 |
 | Performance issue — need structured data | B6 |
 | Crash/reboot — need structured data | B7 |
 | Handing off to specialist | C1 |
