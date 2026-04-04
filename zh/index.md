@@ -9,7 +9,7 @@ title: 技术支持邮件沟通模板
 
 一套覆盖技术支持工单完整生命周期的即用型邮件模板 — 从首次联系到关闭工单，从升级处理到缺陷跟踪。
 
-基于多年实战经验打造，涵盖全球时区下 large-scale 企业级 Linux 环境的技术支持场景。
+基于多年实战经验打造，涵盖全球时区下 大规模企业级 Linux 环境的技术支持场景。
 
 [![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-support-yellow?style=flat-square&logo=buy-me-a-coffee)](https://buymeacoffee.com/bowang168)
 [![Sponsor](https://img.shields.io/badge/GitHub%20Sponsors-sponsor-ea4aaa?style=flat-square&logo=github-sponsors)](https://github.com/sponsors/bowang168)
