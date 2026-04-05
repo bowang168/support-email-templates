@@ -2,6 +2,4 @@ title: Support Email Templates
 description: 33 production-ready email templates for technical support engineers
 theme: jekyll-theme-cayman
 exclude:
-  - pdf/template.tex
-  - pdf/template-zh.tex
   - README.md

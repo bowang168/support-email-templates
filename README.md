@@ -14,13 +14,6 @@ Covering the full lifecycle of a support case — from first contact to closure,
 - [English Edition](https://bowang168.github.io/support-email-templates/) — Full templates on GitHub Pages
 - [中文版](https://bowang168.github.io/support-email-templates/zh/) — 完整中文版在线阅读
 
-## Download PDF
-
-- [English PDF](https://github.com/bowang168/support-email-templates/raw/main/pdf/Support-Email-Templates-EN.pdf)
-- [中文 PDF](https://github.com/bowang168/support-email-templates/raw/main/pdf/Support-Email-Templates-ZH.pdf)
-
----
-
 ## Why This Exists
 
 Most support teams either have no templates (every engineer writes differently) or have bloated ones full of corporate filler that customers don't read.
